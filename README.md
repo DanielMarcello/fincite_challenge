@@ -1,5 +1,7 @@
 # Fincite Challenge
 
+>Please check the [document](/challenge_document.pdf) for more information
+
 ## Installation
 1. `git clone` the repository
 
