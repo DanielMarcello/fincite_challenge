@@ -1,0 +1,23 @@
+.LocationsMain {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.IntervalsGrid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.IntervalItem {
+  padding: 10px;
+}
+
+.LocationsGrid {
+  display: grid;
+  grid-template-columns: 45% 10% 45%;
+  align-items: center;
+}
+
+.LocationItem {
+  padding: 5px 10px;
+}

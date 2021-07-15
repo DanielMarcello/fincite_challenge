@@ -1,0 +1,29 @@
+.ForecastMain {
+  margin-top: 20px;
+  padding: 10px 5px;
+  background-color: lightslategray;
+}
+
+.ForecastGrid {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+}
+
+.ForecastItem {
+  padding: 20px;
+    border: solid 0.5px #c1c1c1;
+    background: linear-gradient(0deg, rgb(177 177 177) 0%, rgba(255,255,255,1) 26%, rgb(237 241 253) 100%);
+}
+
+.ForecastDay {
+  margin-bottom: 0px !important;
+}
+
+.ForecastTemp {
+  font-size: 40px;
+  margin-bottom: 0px;
+}
+
+.ForecastCondition{
+  margin-bottom: 0px;
+}
