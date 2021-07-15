@@ -29,10 +29,14 @@ from weatherdashboard.serializers import (
     CountrySerializer
 )
 
-API_KEY = '8e6081df8241f0b89932b6623800bd9b'
-LOCATION_BY_PLACE_API = 'https://api.openweathermap.org/data/2.5/weather?q={},{}&appid={}'
-LOCATION_BY_COORD_API = 'https://api.openweathermap.org/data/2.5/weather?lat={}&lon={}&appid={}'
-FORECAST_BY_COORD_API = 'https://api.openweathermap.org/data/2.5/onecall?lat={}&lon={}&exclude=current,minutely,hourly&appid={}'
+# ENV data
+import environ
+env = environ.Env()
+environ.Env.read_env()
+API_KEY = env('WEATHER_API_KEY')
+LOCATION_BY_PLACE_API = env('LOCATION_BY_PLACE_API')
+LOCATION_BY_COORD_API = env('LOCATION_BY_COORD_API')
+FORECAST_BY_COORD_API = env('FORECAST_BY_COORD_API')
 
 class CountryViewSet(mixins.ListModelMixin, viewsets.GenericViewSet):
     """
